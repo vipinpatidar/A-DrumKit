@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("bg.webp") no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.key {
+  color: white;
+  margin: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  font-size: 2rem;
+  padding: 1.3rem 0.6rem;
+  border-radius: 0.1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  transition: all 0.09s ease;
+  width: 8rem;
+}
+.playing {
+  transform: scale(1.098);
+  border-color: #ff206e;
+  box-shadow: 0 0 1rem #ff206e;
+}
+
+.sound {
+  text-transform: uppercase;
+  display: block;
+  margin: 0.5rem auto;
+  color: coral;
+  font-size: 0.8rem;
+}
